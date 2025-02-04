@@ -1,11 +1,12 @@
 import React from "react";
-import InfoBox from "./dist";
+import InfoBox from './module';
+
 
 function App() {
 
   return (
     <div className="App">
-      <InfoBox title={'title'} content={'contents'}/>
+      <InfoBox title={"title"} content={'content'}/>
     </div>
   );
 

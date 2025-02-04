@@ -1,0 +1,5 @@
+모듈 기능 추가 시 파일을
+src/module 안에 넣을 것 
+
+빌드 시 
+'npm run dist' 사용해서 빌드 하면 bebal을 사용해서 dist 폴터안에 변경된 내용 적용됨
