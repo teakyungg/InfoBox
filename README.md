@@ -9,6 +9,10 @@ webpack 명령어는 터미널에 "npm run babel" 이렇게 치면 됨
 이 모듈을 저장할 GitHub 레파지토리에 push를 하고
 이 모듈을 사용하고자 하는 프로젝트에서 "npm i (GitHub 레파지토리 주소)"를 입력하면 됨
 
+!! 처음 만들어서 올릴 때!!
+package.json에서 name 변경해서 올릴 것
+불러올때 package.json에 있는 name에 따른 폴터가 생기기 때문임
+
 !!주의 사항!!
 만약 React(JSX) 문법을 사용시 사용하는 모든 상단에
 import React from "react"; 를 입력할 것
