@@ -1,4 +1,4 @@
-Babel Module 기본 세팅 파일
+<h2> Babel Module 기본 세팅 파일 </h2>
 
 기본적으로 src/module를 Babel하도록 설정이 되어 있음
 즉 모듈을 만들꺼면 module 파일안에 모두 만들어야 함
