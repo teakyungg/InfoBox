@@ -1,10 +1,12 @@
 import React from "react";
-import Print from "./module/Print.js";
+import TextDisplay from './module';
+
+
 
 function App() {
   return (
     <div>
-       <Print/>
+       <TextDisplay title={"title"} contents={"contents"}/>
     </div>
   );
 }
