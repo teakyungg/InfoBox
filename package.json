@@ -1,5 +1,5 @@
 {
-  "name": "babel_module_setting",
+  "name": "module_setting",
   "version": "0.1.0",
   "private": true,
   "main": "dist/index.js",
@@ -14,8 +14,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "babel": "npx babel src/module --out-file dist/index.js && cp src/module/*.css dist",
-    "webpack" : "webpack"
+    "babel": "npx babel src/module --out-file dist/index.js && find src/module -type f ! -name '*.js' -exec cp {} dist ;",
+    "webpack": "webpack"
   },
   "eslintConfig": {
     "extends": [
