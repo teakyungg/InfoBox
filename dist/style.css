@@ -1,0 +1,17 @@
+.InfoBox{
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    background-color: lightblue;
+}
+
+.InfoBox *{
+    margin: 0;
+}
+
+.InfoBox > p:nth-of-type(1){
+    margin-top: 15px
+}

@@ -1,6 +1,6 @@
 {
-  "name": "module_setting",
-  "version": "0.1.0",
+  "name": "infobox",
+  "version": "1.0.0",
   "private": true,
   "main": "dist/index.js",
   "dependencies": {

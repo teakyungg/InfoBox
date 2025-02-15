@@ -1,11 +1,18 @@
 import React from "react";
-import "./test.css";
-function Print({
+import "./style.css";
+function InfoBox({
   title,
   contents
 }) {
-  return /*#__PURE__*/React.createElement("p", {
-    className: "box"
-  }, /*#__PURE__*/React.createElement("h2", null, title), /*#__PURE__*/React.createElement("p", null, contents));
+  title = ArraySet(title, "h2");
+  contents = ArraySet(contents, "p");
+  return /*#__PURE__*/React.createElement("article", {
+    className: "InfoBox"
+  }, title, contents);
 }
-export default Print;
+function ArraySet(data, Tag) {
+  if (Array.isArray(data)) return data.map((item, i) => /*#__PURE__*/React.createElement(Tag, {
+    key: i
+  }, item));else return /*#__PURE__*/React.createElement(Tag, null, data);
+}
+export default InfoBox;

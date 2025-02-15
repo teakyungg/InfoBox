@@ -1,13 +1,24 @@
 import React from "react";
-import "./test.css";
+import "./style.css";
 
-function Print({ title, contents }) {
+function InfoBox({ title, contents }) {
+
+  title = ArraySet(title , "h2");
+  contents = ArraySet(contents, "p");
+
   return (
-    <p className="box">
-      <h2>{title}</h2>
-      <p>{contents}</p>
-    </p>
+    <article className="InfoBox">
+       {title}
+       {contents} 
+    </article>
   );
 }
 
-export default Print;
+function ArraySet(data, Tag) {
+
+  if(Array.isArray(data)) return data.map((item,i) => <Tag key={i}>{item}</Tag>);
+  else return <Tag>{data}</Tag>
+
+}
+
+export default InfoBox;
